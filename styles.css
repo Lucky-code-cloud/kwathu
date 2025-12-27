@@ -75,4 +75,52 @@ section{
     font-size: 2.5rem;
     cursor: pointer;
     color: var(--black);
+    display: none;
+}
+
+
+
+
+
+
+
+/*Media Queries*/
+@media (max-width:1200px){
+    section{
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:760px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+    }
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 55%;
+    }
 }
