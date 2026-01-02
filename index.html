@@ -2,260 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwathu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="all.css">
-    <script src="https://kits.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-    <title>Lucky Banda</title>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="LOGO.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">My Services</a></li>
-                    <li><a href="#portfolio">My Work</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
-            </nav>
-            <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi, I'm <span> Lucky </span> <br> Banda From Malawi</h1>
+<!-- This is the navigation section! -->
+    <section class="header">
+        <a href="index.html" class="logo">Kwathu</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="packages.html">Packages</a>
+            <a href="book.html">Book</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+<!-- This is the Header Section -->
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(./bg.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Travel Malawi</h3>
+                        <a href="packages.html" class="btn">Discover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(./2019_Ford_Mustang_GT_5.0_facelift.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Discover More</h3>
+                        <a href="packages.html" class="btn">Discover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(./2025-ford-ranger-sport-f34.avif) no-repeat;">
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Travel More</h3>
+                        <a href="packages.html" class="btn">Discover more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+<!-- This is the Services Content -->
+    <section class="services">
+        <h1 class="heading-title">Our Services</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./arrow.png" alt="">
+                <h3>Adventure</h3>
+            </div>
+            <div class="box">
+                <img src="./arrow.png" alt="">
+                <h3>Tour Guide</h3>
+            </div>
+            <div class="box">
+                <img src="./arrow.png" alt="">
+                <h3>Trekking</h3>
+            </div>
+            <div class="box">
+                <img src="./arrow.png" alt="">
+                <h3>Off Road</h3>
+            </div>
+            <div class="box">
+                <img src="./arrow.png" alt="">
+                <h3>Camping</h3>
             </div>
         </div>
+    </section>
+
+<!-- This is the About Section -->
+<section class="home-about">
+    <div class="image">
+        <img src="./lucky.jpg" alt="">
     </div>
+    <div class="content">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam quos nulla, deserunt neque incidunt velit odio perferendis, nam possimus reiciendis consequatur sapiente aspernatur. Eveniet mollitia molestias voluptas dolorem voluptatem voluptatum dolorum, impedit nihil maiores ab itaque ullam facilis rerum magni veritatis tenetur ipsa maxime earum nisi dolores porro consequatur!</p>
+        <a href="about.html" class="btn">Read More</a>
+    </div>
+</section>
 
-<!-------------------about---------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="lll.jpg" width="250px">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title"> About Me</h1>
-                    <p>Software Development is my Career, Passion and Hobby. My journey in this Career started back in 2017 after i wrote my first "Hello World!" code in plain HTML. I soon got introduced to C++ and Python before i learnt more front-end web development using CSS and Javascript.
-                        After some few months of front-end development, i got introduced to back-end devlopment using PHP. Now i can develop mobile apps using Kotlin, Swift and Flutter.
-                    </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Development</span><br>Front and Back End Development of Websites</li>
-                            <li><span>Desktop App Development</span><br>Windows, MacOS and Linux App Development</li>
-                            <li><span>Moblie App Development</span><br>Building Android/IOS Apps for you</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2022 - Current </span><br>Freelance Developer</li>
-                            <li><span>2021 - 2022 </span><br>Junior Developer at Breakshell One</li>
-                            <li><span>2017 - 2021 </span><br> Personal Project Developer</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021</span><br>W3 Schools</li>
-                            <li><span>2019</span><br>Online Tutorials</li>
-                            <li><span>2017</span><br>GIS Student at MUST</li>
-                        </ul>
-                    </div>
-                </div>
+<!-- THis is the Home Packages Section -->
+ <section class="home-packages">
+    <h1 class="heading">Our Packages</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="./lucky.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Adventure and Tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, impedit!</p>
+                <a href="book.html" class="btn">Book Now</a>
             </div>
         </div>
-    </div>
-
-<!------------Services-------------->
-<div class="services" id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Website Development</h2>
-                <p>Web development involves creating and maintaining websites and web applications. This service encompasses a range of tasks, including web design, content creation, and coding. As a web developer, I build responsive and user-friendly websites that work seamlessly across different devices and browsers.</p>
-                <p><span style="font-size:30px;">Key Features</span>:
-                    <ul>
-                        <li>Responsive Design</li>
-                        <li>Front-End Development</li>
-                        <li>Back-End Development</li>
-                        <li>Content Management Systems (CMS)</li>
-                        <li>E-commerce Solutions</li>
-                        <li>SEO Optimization</li>
-                    </ul>
+        <div class="box">
+            <div class="image">
+                <img src="./lucky.jpg" alt="">
             </div>
-            <div>
-                <i class="fa-solid fa-laptop"></i>
-                <h2>Desktop App Development</h2>
-                <p>Desktop app development involves creating software applications that run on personal computers and laptops. This service includes designing, coding, and testing applications for various operating systems like Windows, macOS, and Linux. As a desktop app developer, I build robust and efficient applications tailored to user needs.</p>
-                <p><span style="font-size:30px;">Key Features</span>:
-                    
-                    <ul>
-                        <li>Custom Solutions</li>
-                        <li>Cross-Platform Compatibility</li>
-                        <li>Rich User Interfaces</li>
-                        <li>Offline Functionality</li>
-                        <li>Performance Optimization</li>
-                        <li>Security Measures</li>
-                        <li>Security Measures</li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <i class="fa-solid fa-mobile"></i>
-                <h2>Mobile App Development</h2>
-                <p>Mobile app development focuses on creating applications for mobile devices, including smartphones and tablets. This service involves designing, coding, and testing apps for iOS, Android, or cross-platform solutions. As a mobile app developer, I deliver custom apps that meet specific client needs and provide a seamless user experience.</p>
-                <p><span style="font-size:30px;">Key Features</span>:
-                    
-                    <ul>
-                        <li>Native App Development</li>
-                        <li>Cross-Platform Development</li>
-                        <li>User-Centric Design</li>
-                        <li>API Integration</li>
-                        <li>Push Notifications</li>
-                        <li>Security Features</li>
-                    </ul>
-                </p>
+            <div class="content">
+                <h3>Adventure and Tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, impedit!</p>
+                <a href="book.html" class="btn">Book Now</a>
             </div>
         </div>
-    </div>
-</div>
-
-
-<!--------------------Portfolio------------------------>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="konnekt.PNG" alt="">
-                <div class="layer">
-                    <h3>Social Network App</h3>
-                    <p>A Social Networking App that is still in <br> development.
-                        Check it out now.
-                    </p>
-                    <a href="https://konekmw.netlify.app/"><i class="fa-solid fa-external-link"></i></a>
-                </div>
+        <div class="box">
+            <div class="image">
+                <img src="./lucky.jpg" alt="">
             </div>
-            <div class="work">
-                <img src="ekhaya.PNG" alt="">
-                <div class="layer">
-                    <h3>E Commerce Store </h3>
-                    <p>This is a prototype for an online shop <br>
-                        Check it out now.
-                    </p>
-                    <a href="https://ekhaya.netlify.app"><i class="fa-solid fa-external-link"></i></a>
-                </div>
-            </div>
-            
-            <div class="work">
-                    <img src="lb.PNG" alt="">
-                    <div class="layer">
-                        <h3>LB Technology Website</h3>
-                        <p>An Architectual pattern using PHP <br> development.
-                            Check it out now.
-                        </p>
-                        <a href="https://lucky-smakager-8e3961.netlify.app/"><i class="fa-solid fa-external-link"></i></a>
-                    </div>
-                </div>
-        </div>
-        <button class="btn1" onclick="showemmore('more')">See More</button>  
-
-
-        <div class="more" id="more">
-            <div class="work-list">
-                <div class="work">
-                    <img src="a2z.PNG" alt="">
-                    <div class="layer">
-                        <h3>Farm Website</h3>
-                        <p>An  Awesome app that i developed so that <br> i can listen to my favorite music.
-                            <br> Check it out now.
-                        </p>
-                        <a href="https://projecta2z.netlify.app/"><i class="fa-solid fa-external-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="hr.PNG" alt="">
-                    <div class="layer">
-                        <h3>Harvest Rock Church Website</h3>
-                        <p>This projects showcases my skills in Authentication and Security in login systems. <br>
-                            Check it out now.
-                        </p>
-                        <a href="https://harvestrock.netlify.app/"><i class="fa-solid fa-external-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="sn.PNG" alt="">
-                    <div class="layer">
-                        <h3>Simplicity Nation Website</h3>
-                        <p>This is a blog site i developed for one of my clients
-                            <br> Check it out now.
-                        </p>
-                        <a href="https://simplicitynation.netlify.app/"><i class="fa-solid fa-external-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <button class="btn1" onclick="hideem('more')">Hide More</button>
-        </div>
-        
-
-
-    </div>
-</div>
-  
-  
-
-
-<!--------------Contact-------------->
-<div class="contact" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="subtitle">Contact Me</h1>
-                <p> <i class="fa-solid fa-paper-plane"></i> luckyharveybanda@gmail.com</p>
-                <p> <i class="fa-solid fa-phone"></i>0999 594 385</p>
-                <div class="social-icons">
-                    <a href="https://web.facebook.com/profile.php?id=61554203947692"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/luckyharveybanda/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@learnwithlucky5381"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/in/lucky-banda-343042227/"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a href="CV.docx.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name ="submit-to-google-sheet">
-                    <h3>Talk to me now!</h3>
-                    <br>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
+            <div class="content">
+                <h3>Adventure and Tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, impedit!</p>
+                <a href="book.html" class="btn">Book Now</a>
+                <br>
+                S
             </div>
         </div>
+        <br>
+        <br>
     </div>
+    <br><br>
+    <div class="load-more"><a href="packages.html" class="btn">Load More</a></div>
 
-    <div class="copyright">
-        <p>Copyright &copy; <span>Lucky Banda</span></p>
-    </div>
-</div>
+ </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script>
+<!-- This is the footer section! -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+                <a href="packages.html"><i class="fas fa-angle-right"></i>Package</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Terms of Use</a>
+            </div>
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href=""><i class="fas fa-angle-right"></i>Ask Questions</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About Us</a>
+                <a href=""><i class="fas fa-angle-right"></i>Privacy Policy</a>
+                <a href=""><i class="fas fa-angle-right"></i>Terms of Use</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href=""><i class="fas fa-phone"></i>+265-999-123-456</a>
+                <a href=""><i class="fas fa-phone"></i>+265-999-123-456</a>
+                <a href=""><i class="fas fa-envelope"></i>email@gmail.com</a>
+                <a href=""><i class="fas fa-map"></i>Chikwawa, Malawi.</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href=""><i class="fab fa-facebook"></i>Facebook</a>
+                <a href=""><i class="fab fa-tiktok"></i>Tik Tok</a>
+                <a href=""><i class="fab fa-instagram"></i>Instagram</a>
+                <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i>X</a>
+            </div>
+        </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css" integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-<script src="main.js"></script>
+        <div class="credit">Designed by <span><a href="https://lucky-code-cloud.github.io/luckybanda/">Lucky Banda</a></span> | all rights reserved! </div>
+    </section>
 
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 </html>
-
